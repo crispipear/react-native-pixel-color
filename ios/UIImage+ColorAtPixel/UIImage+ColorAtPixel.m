@@ -62,16 +62,16 @@
     int bytesPerRow = bytesPerPixel * 1;
     NSUInteger bitsPerComponent = 8;
     unsigned char pixelData[4] = { 0, 0, 0, 0 };
-    CGContextRef context = CGBitmapContextCreate(pixelData, 
+    CGContextRef context = CGBitmapContextCreate(pixelData,
                                                  1,
                                                  1,
-                                                 bitsPerComponent, 
-                                                 bytesPerRow, 
+                                                 bitsPerComponent,
+                                                 bytesPerRow,
                                                  colorSpace,
                                                  kCGImageAlphaPremultipliedLast | kCGBitmapByteOrder32Big);
     CGColorSpaceRelease(colorSpace);
     CGContextSetBlendMode(context, kCGBlendModeCopy);
-
+    
     // Draw the pixel we are interested in onto the bitmap context
     CGContextTranslateCTM(context, -pointX, pointY-(CGFloat)height);
     CGContextDrawImage(context, CGRectMake(0.0f, 0.0f, (CGFloat)width, (CGFloat)height), cgImage);

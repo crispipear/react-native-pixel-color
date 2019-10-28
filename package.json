@@ -1,10 +1,16 @@
 {
   "name": "react-native-pixel-color",
-  "version": "0.0.2",
-  "description": "Returns the pixel color from a graphic at a given corrdinate.",
+  "title": "React Native Pixel Color",
+  "version": "0.0.3",
+  "description": "TODO",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/spacesuitdiver/react-native-pixel-color.git"
+    "url": "git+https://github.com/spacesuitdiver/react-native-pixel-color.git",
+    "baseUrl": "https://github.com/spacesuitdiver/react-native-pixel-color"
   },
   "keywords": [
     "react-native",
@@ -18,9 +24,16 @@
     "scale",
     "resize"
   ],
-  "peerDependencies": {
-    "react-native": ">=v0.14.2"
-  },
   "author": "Chris LeBlanc <spacesuitdiver@gmail.com> (http://spacesuitdiver.com)",
-  "license": "MIT"
+  "license": "MIT",
+  "licenseFilename": "LICENSE",
+  "readmeFilename": "README.md",
+  "peerDependencies": {
+    "react": "^16.8.1",
+    "react-native": ">=0.59.0-rc.0 <1.0.x"
+  },
+  "devDependencies": {
+    "react": "^16.8.3",
+    "react-native": "^0.59.10"
+  }
 }

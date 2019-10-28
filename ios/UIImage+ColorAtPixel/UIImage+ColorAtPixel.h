@@ -22,15 +22,15 @@
 
 /*
  UIImage+ColorAtPixel.h
-
+ 
  Created by Ole Begemann
  October, 2009
  */
- 
+
 #import <UIKit/UIKit.h>
 
 /*
- A category on UIImage that enables you to query the color value of arbitrary 
+ A category on UIImage that enables you to query the color value of arbitrary
  pixels of the image.
  */
 @interface UIImage (ColorAtPixel)
